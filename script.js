@@ -42,8 +42,10 @@ addBtn.addEventListener("click", addRow);
 body = document.querySelector(".body");
 
 function addRow() {
+  console.log("button adds")
   let newRow = document.createElement("div");
   newRow.classList.add("body__row");
-  newRow.innerHTML = "<h2>This is created</h2>";
+  newRow.innerHTML = 
+  "<span class='row__count'>1</span><div class='row__blocks'><div class='row__input'><span>Paid</span><input type='number' name='paid' id='row_paid' /></div><div class='row__input'><span>Seats</span><input type='number' name='paid' id='row_seats' /></div><div class='row__info'><p>change</p><span>R <span id='change'></span></span></div><div class='row__info'><p>drivers</p><span>R <span id='driverCut'></span></span></div></div>";
   body.appendChild(newRow);
 }
