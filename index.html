@@ -14,199 +14,228 @@
     />
   </head>
   <body>
-    <div class="container">
-      <h1 class="heading">
-        <span><i class="bx bxs-taxi logo"></i></span> Taxi maths app
-      </h1>
-      <div class="app">
-        <div class="app__header">
-          <div class="app__cost header__app">
-            <p class="header__text">Taxi <br />Fare</p>
-            <input id="fare" class="header__input" type="number" />
+    <div class="background">
+      <div class="frame">
+        <div class="container">
+          <div class="menu"><i class="bx bx-menu-alt-left"></i></div>
+          <div class="title">
+            <h1 class="heading">
+              <span><i class="bx bxs-taxi logo"></i></span> Taxi maths app
+            </h1>
           </div>
-          <div class="app__taxi header__app">
-            <p class="header__text">
-              Total Seats:<i class="bx bx-user header__logo"></i>
-            </p>
-            <input id="total_seats" class="header__input" type="number" />
-          </div>
-          <div class="header__app">
-            <span class="header__cash"
-              >Drivers Total <br />
-              <span id="driverCash"></span
-            ></span>
-          </div>
-        </div>
-        <div class="app__header"></div>
-        <!--This is the section for the body of the code which 
-        includes the row calculations-->
-        <div class="body">
-          <!--Fiirst child. All other are based on this one.-->
-          <div class="body__row">
-            <span class="row__count">1</span>
-            <div class="row__blocks">
-              <div class="row__input">
-                <span>Paid</span>
-                <input type="number" name="paid" id="p1" class="row_paid" />
+          <div class="app">
+            <div class="app__header">
+              <div class="app__cost header__app">
+                <p class="header__text">Taxi Fare <i class='bx bx-coin-stack'></i></p>
+                <input id="fare" class="header__input" type="number" />
               </div>
-              <div class="row__input">
-                <span>Seats</span>
-                <input type="number" name="paid" id="s1" class="row_seats" />
+              <div class="app__taxi header__app">
+                <p class="header__text">
+                  Total Seats:<i class="bx bx-user header__logo"></i>
+                </p>
+                <input id="total_seats" class="header__input" type="number" />
               </div>
-              <div class="row__info">
-                <p>change</p>
-                <span>R <span id="change1"></span></span>
+              <!--Drivers Cash on new row-->
+            </div>
+            <div class="drivers">
+              <span class="header__cash"
+                >Drivers Total:  
+                <span id="driverCash"></span
+              ></span>
+            </div>
+            <!--This is the section for the body of the code which 
+          includes the row calculations-->
+            <div class="body">
+              <!--Fiirst child. All other are based on this one.-->
+              <div class="body__row">
+                <span class="row__count">1</span>
+                <div class="row__blocks">
+                  <div class="row__input">
+                    <span>Paid</span>
+                    <input type="number" name="paid" id="p1" class="row_paid" />
+                  </div>
+                  <div class="row__input">
+                    <span>Seats</span>
+                    <input
+                      type="number"
+                      name="paid"
+                      id="s1"
+                      class="row_seats"
+                    />
+                  </div>
+                  <div class="row__info">
+                    <p>change</p>
+                    <span>R <span id="change1"></span></span>
+                  </div>
+                  <div class="row__info">
+                    <p>drivers</p>
+                    <span>R <span id="driverCut1"></span></span>
+                  </div>
+                </div>
               </div>
-              <div class="row__info">
-                <p>drivers</p>
-                <span>R <span id="driverCut1"></span></span>
+              <div class="body__row">
+                <span class="row__count">2</span>
+                <div class="row__blocks">
+                  <div class="row__input">
+                    <span>Paid</span>
+                    <input type="number" name="paid" id="p2" class="row_paid" />
+                  </div>
+                  <div class="row__input">
+                    <span>Seats</span>
+                    <input
+                      type="number"
+                      name="paid"
+                      id="s2"
+                      class="row_seats"
+                    />
+                  </div>
+                  <div class="row__info">
+                    <p>change</p>
+                    <span>R <span id="change2"></span></span>
+                  </div>
+                  <div class="row__info">
+                    <p>drivers</p>
+                    <span>R <span id="driverCut2"></span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="body__row">
+                <span class="row__count">3</span>
+                <div class="row__blocks">
+                  <div class="row__input">
+                    <span>Paid</span>
+                    <input type="number" name="paid" id="p3" class="row_paid" />
+                  </div>
+                  <div class="row__input">
+                    <span>Seats</span>
+                    <input
+                      type="number"
+                      name="paid"
+                      id="s3"
+                      class="row_seats"
+                    />
+                  </div>
+                  <div class="row__info">
+                    <p>change</p>
+                    <span>R<span id="change3"></span></span>
+                  </div>
+                  <div class="row__info">
+                    <p>drivers</p>
+                    <span>R<span id="driverCut3"></span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="body__row">
+                <span class="row__count">4</span>
+                <div class="row__blocks">
+                  <div class="row__input">
+                    <span>Paid</span>
+                    <input type="number" name="paid" id="p4" class="row_paid" />
+                  </div>
+                  <div class="row__input">
+                    <span>Seats</span>
+                    <input
+                      type="number"
+                      name="paid"
+                      id="s4"
+                      class="row_seats"
+                    />
+                  </div>
+                  <div class="row__info">
+                    <p>change</p>
+                    <span>R <span id="change4"></span></span>
+                  </div>
+                  <div class="row__info">
+                    <p>drivers</p>
+                    <span>R <span id="driverCut4"></span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="body__row">
+                <span class="row__count">5</span>
+                <div class="row__blocks">
+                  <div class="row__input">
+                    <span>Paid</span>
+                    <input type="number" name="paid" id="p5" class="row_paid" />
+                  </div>
+                  <div class="row__input">
+                    <span>Seats</span>
+                    <input
+                      type="number"
+                      name="paid"
+                      id="s5"
+                      class="row_seats"
+                    />
+                  </div>
+                  <div class="row__info">
+                    <p>change</p>
+                    <span>R <span id="change5"></span></span>
+                  </div>
+                  <div class="row__info">
+                    <p>drivers</p>
+                    <span>R <span id="driverCut5"></span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="body__row">
+                <span class="row__count">6</span>
+                <div class="row__blocks">
+                  <div class="row__input">
+                    <span>Paid</span>
+                    <input type="number" name="paid" id="p6" class="row_paid" />
+                  </div>
+                  <div class="row__input">
+                    <span>Seats</span>
+                    <input
+                      type="number"
+                      name="paid"
+                      id="s6"
+                      class="row_seats"
+                    />
+                  </div>
+                  <div class="row__info">
+                    <p>change</p>
+                    <span>R <span id="change6"></span></span>
+                  </div>
+                  <div class="row__info">
+                    <p>drivers</p>
+                    <span>R <span id="driverCut6"></span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="body__row">
+                <span class="row__count">7</span>
+                <div class="row__blocks">
+                  <div class="row__input">
+                    <span>Paid</span>
+                    <input type="number" name="paid" id="p7" class="row_paid" />
+                  </div>
+                  <div class="row__input">
+                    <span>Seats</span>
+                    <input
+                      type="number"
+                      name="paid"
+                      id="s7"
+                      class="row_seats"
+                    />
+                  </div>
+                  <div class="row__info">
+                    <p>change</p>
+                    <span>R <span id="change7"></span></span>
+                  </div>
+                  <div class="row__info">
+                    <p>drivers</p>
+                    <span>R <span id="driverCut7"></span></span>
+                  </div>
+                </div>
+              </div>
+              <!--End of first child-->
+            </div>
+            <div class="footer">
+              
               </div>
             </div>
           </div>
-          <div class="body__row">
-            <span class="row__count">2</span>
-            <div class="row__blocks">
-              <div class="row__input">
-                <span>Paid</span>
-                <input type="number" name="paid" id="p2" class="row_paid" />
-              </div>
-              <div class="row__input">
-                <span>Seats</span>
-                <input type="number" name="paid" id="s2" class="row_seats" />
-              </div>
-              <div class="row__info">
-                <p>change</p>
-                <span>R <span id="change2"></span></span>
-              </div>
-              <div class="row__info">
-                <p>drivers</p>
-                <span>R <span id="driverCut2"></span></span>
-              </div>
-            </div>
-          </div>
-          <div class="body__row">
-            <span class="row__count">3</span>
-            <div class="row__blocks">
-              <div class="row__input">
-                <span>Paid</span>
-                <input type="number" name="paid" id="p3" class="row_paid" />
-              </div>
-              <div class="row__input">
-                <span>Seats</span>
-                <input type="number" name="paid" id="s3" class="row_seats" />
-              </div>
-              <div class="row__info">
-                <p>change</p>
-                <span>R<span id="change3"></span></span>
-              </div>
-              <div class="row__info">
-                <p>drivers</p>
-                <span>R<span id="driverCut3"></span></span>
-              </div>
-            </div>
-          </div>
-          <div class="body__row">
-            <span class="row__count">4</span>
-            <div class="row__blocks">
-              <div class="row__input">
-                <span>Paid</span>
-                <input type="number" name="paid" id="p4" class="row_paid" />
-              </div>
-              <div class="row__input">
-                <span>Seats</span>
-                <input type="number" name="paid" id="s4" class="row_seats" />
-              </div>
-              <div class="row__info">
-                <p>change</p>
-                <span>R <span id="change4"></span></span>
-              </div>
-              <div class="row__info">
-                <p>drivers</p>
-                <span>R <span id="driverCut4"></span></span>
-              </div>
-            </div>
-          </div>
-          <div class="body__row">
-            <span class="row__count">5</span>
-            <div class="row__blocks">
-              <div class="row__input">
-                <span>Paid</span>
-                <input type="number" name="paid" id="p5" class="row_paid" />
-              </div>
-              <div class="row__input">
-                <span>Seats</span>
-                <input type="number" name="paid" id="s5" class="row_seats" />
-              </div>
-              <div class="row__info">
-                <p>change</p>
-                <span>R <span id="change5"></span></span>
-              </div>
-              <div class="row__info">
-                <p>drivers</p>
-                <span>R <span id="driverCut5"></span></span>
-              </div>
-            </div>
-          </div>
-          <div class="body__row">
-            <span class="row__count">6</span>
-            <div class="row__blocks">
-              <div class="row__input">
-                <span>Paid</span>
-                <input type="number" name="paid" id="p6" class="row_paid" />
-              </div>
-              <div class="row__input">
-                <span>Seats</span>
-                <input type="number" name="paid" id="s6" class="row_seats" />
-              </div>
-              <div class="row__info">
-                <p>change</p>
-                <span>R <span id="change6"></span></span>
-              </div>
-              <div class="row__info">
-                <p>drivers</p>
-                <span>R <span id="driverCut6"></span></span>
-              </div>
-            </div>
-          </div>
-          <div class="body__row">
-            <span class="row__count">7</span>
-            <div class="row__blocks">
-              <div class="row__input">
-                <span>Paid</span>
-                <input type="number" name="paid" id="p7" class="row_paid" />
-              </div>
-              <div class="row__input">
-                <span>Seats</span>
-                <input type="number" name="paid" id="s7" class="row_seats" />
-              </div>
-              <div class="row__info">
-                <p>change</p>
-                <span>R <span id="change7"></span></span>
-              </div>
-              <div class="row__info">
-                <p>drivers</p>
-                <span>R <span id="driverCut7"></span></span>
-              </div>
-            </div>
-          </div>
-          <!--End of first child-->
-        </div>
-        <div class="footer"><div class="app__header">
-          <div class="app__cost header__app">
-            <p class="header__text">Taxi <br />Fare</p>
-            <input id="fare" class="header__input" type="number" />
-          </div>
-          <div class="app__taxi header__app">
-            <p class="header__text">
-              Total Seats:<i class="bx bx-user header__logo"></i>
-            </p>
-            <input id="total_seats" class="header__input" type="number" />
-          </div>
-          <div class="header__app">
-            <span class="header__cash"
-              >Drivers Total <br />
-              <span id="driverCash"></span
-            ></span>
         </div>
       </div>
     </div>
