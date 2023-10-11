@@ -137,3 +137,7 @@ function calculateChange() {
     console.log("testing seventh");
   }
 }
+let addBtn = document.getElementById("addBtn");
+addBtn.addEventListener("click", () => {
+  console.log("add button is clicked");
+});
