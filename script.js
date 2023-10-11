@@ -138,6 +138,9 @@ function calculateChange() {
   }
 }
 let addBtn = document.getElementById("addBtn");
-addBtn.addEventListener("click", () => {
-  console.log("add button is clicked");
-});
+
+addBtn.addEventListener("click", addNewFare);
+
+function addNewFare() {
+  document.getElementById("p1").style.color = blue;
+}
