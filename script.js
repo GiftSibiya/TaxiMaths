@@ -142,5 +142,11 @@ let addBtn = document.getElementById("addBtn");
 addBtn.addEventListener("click", addNewFare);
 
 function addNewFare() {
-  document.getElementById("p1").style.color = blue;
+  console.log("hello world");
+  document.querySelector(".body").style.height = "200px";
+  document.querySelector(".secondFare").style.height = "260px";
+  document.querySelector(".secondFare").style.display = "flex";
+  document.querySelector(".frame").style.height = "750px";
+  document.querySelector(".add3rd").style.display = "flex";
+  document.querySelector(".add2nd").style.display = "none";
 }

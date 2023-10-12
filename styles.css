@@ -48,14 +48,22 @@
   border-radius: 20px;
 }
 .app__header {
-  margin-top: 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.secondFareHeader {
+  margin: 3px;
+  width: 200px;
   display: flex;
   justify-content: center;
   justify-content: space-around;
   align-items: center;
 }
 .header__app {
-  border: 2px solid red;
+  border: 2px solid black;
   height: 55px;
   width: 90px;
   padding: 5px;
@@ -83,7 +91,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border: 1.5px solid black;
 }
 .header__text {
-  font-size: 14px;
+  font-size: 12px;
   width: 100px;
   font-weight: bold;
 }
@@ -168,17 +176,20 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 13px;
 }
 .secondFare {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.addRowBtn {
+.addBtn {
   margin: 10px 0px;
   font-size: 15px;
   padding: 5px;
   border-radius: 20px;
   background-color: none;
   border: 2px solid black;
+}
+.add3rd {
+  display: none;
 }
