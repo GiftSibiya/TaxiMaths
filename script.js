@@ -137,16 +137,30 @@ function calculateChange() {
     console.log("testing seventh");
   }
 }
-let addBtn = document.getElementById("addBtn");
+let add2ndBtn = document.getElementById("add2ndBtn");
+let add3rdBtn = document.getElementById("add3rdBtn");
 
-addBtn.addEventListener("click", addNewFare);
+add2ndBtn.addEventListener("click", add2ndFare);
+add3rdBtn.addEventListener("click", add3rdFare);
 
-function addNewFare() {
+function add2ndFare() {
   console.log("hello world");
   document.querySelector(".body").style.height = "200px";
   document.querySelector(".secondFare").style.height = "260px";
+  document.querySelector(".background").style.height = "120vh";
   document.querySelector(".secondFare").style.display = "flex";
-  document.querySelector(".frame").style.height = "750px";
+  document.querySelector(".frame").style.margin = "10px 0px";
+  document.querySelector(".frame").style.height = "800px";
   document.querySelector(".add3rd").style.display = "flex";
   document.querySelector(".add2nd").style.display = "none";
+}
+function add3rdFare() {
+  console.log("hello world");
+  document.querySelector(".body").style.height = "200px";
+  document.querySelector(".thirdFare").style.height = "260px";
+  document.querySelector(".background").style.height = "160vh";
+  document.querySelector(".frame").style.margin = "180px 0px";
+  document.querySelector(".thirdFare").style.display = "flex";
+  document.querySelector(".frame").style.height = "1000px";
+  add3rdBtn.style.display = "none";
 }

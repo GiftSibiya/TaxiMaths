@@ -26,7 +26,9 @@
           <div class="app">
             <div class="app__header">
               <div class="app__cost header__app">
-                <p class="header__text">Taxi Fare <i class='bx bx-coin-stack'></i></p>
+                <p class="header__text">
+                  Taxi Fare <i class="bx bx-coin-stack"></i>
+                </p>
                 <input id="fare" class="header__input" type="number" />
               </div>
               <div class="app__taxi header__app">
@@ -39,8 +41,7 @@
             </div>
             <div class="drivers">
               <span class="header__cash"
-                >Drivers Total:  
-                <span id="driverCash"></span
+                >Drivers Total: <span id="driverCash"></span
               ></span>
             </div>
             <!--This is the section for the body of the code which 
@@ -231,13 +232,14 @@
               </div>
               <!--End of first child-->
             </div>
-            <div class="footer">
-            </div>
-
+            <div class="footer"></div>
+            <!--Second fare starts here-->
             <div class="secondFare">
-              <div class=" secondFareHeader app__header">
+              <div class="secondFareHeader app__header">
                 <div class="app__cost header__app">
-                  <p class="header__text">Taxi Fare <i class='bx bx-coin-stack'></i></p>
+                  <p class="header__text">
+                    Taxi Fare <i class="bx bx-coin-stack"></i>
+                  </p>
                   <input id="fare" class="header__input" type="number" />
                 </div>
                 <div class="app__taxi header__app">
@@ -250,13 +252,18 @@
               </div>
               <div class="body">
                 <!--This is for second for different fare prices.-->
-                
-                <div class=" fare2 body__row">
+
+                <div class="fare2 body__row">
                   <span class="row__count">1</span>
                   <div class="row__blocks">
                     <div class="row__input">
                       <span>Paid</span>
-                      <input type="number" name="paid" id="p1" class="row_paid" />
+                      <input
+                        type="number"
+                        name="paid"
+                        id="p1"
+                        class="row_paid"
+                      />
                     </div>
                     <div class="row__input">
                       <span>Seats</span>
@@ -282,7 +289,12 @@
                   <div class="row__blocks">
                     <div class="row__input">
                       <span>Paid</span>
-                      <input type="number" name="paid" id="p2" class="row_paid" />
+                      <input
+                        type="number"
+                        name="paid"
+                        id="p2"
+                        class="row_paid"
+                      />
                     </div>
                     <div class="row__input">
                       <span>Seats</span>
@@ -308,7 +320,12 @@
                   <div class="row__blocks">
                     <div class="row__input">
                       <span>Paid</span>
-                      <input type="number" name="paid" id="p3" class="row_paid" />
+                      <input
+                        type="number"
+                        name="paid"
+                        id="p3"
+                        class="row_paid"
+                      />
                     </div>
                     <div class="row__input">
                       <span>Seats</span>
@@ -334,7 +351,12 @@
                   <div class="row__blocks">
                     <div class="row__input">
                       <span>Paid</span>
-                      <input type="number" name="paid" id="p4" class="row_paid" />
+                      <input
+                        type="number"
+                        name="paid"
+                        id="p4"
+                        class="row_paid"
+                      />
                     </div>
                     <div class="row__input">
                       <span>Seats</span>
@@ -360,7 +382,12 @@
                   <div class="row__blocks">
                     <div class="row__input">
                       <span>Paid</span>
-                      <input type="number" name="paid" id="p5" class="row_paid" />
+                      <input
+                        type="number"
+                        name="paid"
+                        id="p5"
+                        class="row_paid"
+                      />
                     </div>
                     <div class="row__input">
                       <span>Seats</span>
@@ -386,7 +413,12 @@
                   <div class="row__blocks">
                     <div class="row__input">
                       <span>Paid</span>
-                      <input type="number" name="paid" id="p6" class="row_paid" />
+                      <input
+                        type="number"
+                        name="paid"
+                        id="p6"
+                        class="row_paid"
+                      />
                     </div>
                     <div class="row__input">
                       <span>Seats</span>
@@ -412,7 +444,12 @@
                   <div class="row__blocks">
                     <div class="row__input">
                       <span>Paid</span>
-                      <input type="number" name="paid" id="p7" class="row_paid" />
+                      <input
+                        type="number"
+                        name="paid"
+                        id="p7"
+                        class="row_paid"
+                      />
                     </div>
                     <div class="row__input">
                       <span>Seats</span>
@@ -433,14 +470,42 @@
                     </div>
                   </div>
                 </div>
-                <!--End of first child-->
                 <!--Add third fare here-->
-                <div class=" fare2 body__row">
+              </div>
+            </div>
+            <div class="thirdFare">
+              <div class="secondFareHeader app__header">
+                <div class="app__cost header__app">
+                  <p class="header__text">
+                    Taxi Fare <i class="bx bx-coin-stack"></i>
+                  </p>
+                  <input id="fare" class="header__input" type="number" />
+                </div>
+                <div class="app__taxi header__app">
+                  <p class="header__text">
+                    Total Seats:<i class="bx bx-user header__logo"></i>
+                  </p>
+                  <input
+                    id="total_seats"
+                    class="header__input"
+                    type="number"
+                  />
+                </div>
+                <!--Drivers Cash on new row-->
+              </div>
+              <div class="body">
+
+                <div class="fare2 body__row">
                   <span class="row__count">1</span>
                   <div class="row__blocks">
                     <div class="row__input">
                       <span>Paid</span>
-                      <input type="number" name="paid" id="p1" class="row_paid" />
+                      <input
+                        type="number"
+                        name="paid"
+                        id="p1"
+                        class="row_paid"
+                      />
                     </div>
                     <div class="row__input">
                       <span>Seats</span>
@@ -466,7 +531,12 @@
                   <div class="row__blocks">
                     <div class="row__input">
                       <span>Paid</span>
-                      <input type="number" name="paid" id="p2" class="row_paid" />
+                      <input
+                        type="number"
+                        name="paid"
+                        id="p2"
+                        class="row_paid"
+                      />
                     </div>
                     <div class="row__input">
                       <span>Seats</span>
@@ -492,7 +562,12 @@
                   <div class="row__blocks">
                     <div class="row__input">
                       <span>Paid</span>
-                      <input type="number" name="paid" id="p3" class="row_paid" />
+                      <input
+                        type="number"
+                        name="paid"
+                        id="p3"
+                        class="row_paid"
+                      />
                     </div>
                     <div class="row__input">
                       <span>Seats</span>
@@ -518,7 +593,12 @@
                   <div class="row__blocks">
                     <div class="row__input">
                       <span>Paid</span>
-                      <input type="number" name="paid" id="p4" class="row_paid" />
+                      <input
+                        type="number"
+                        name="paid"
+                        id="p4"
+                        class="row_paid"
+                      />
                     </div>
                     <div class="row__input">
                       <span>Seats</span>
@@ -544,7 +624,12 @@
                   <div class="row__blocks">
                     <div class="row__input">
                       <span>Paid</span>
-                      <input type="number" name="paid" id="p5" class="row_paid" />
+                      <input
+                        type="number"
+                        name="paid"
+                        id="p5"
+                        class="row_paid"
+                      />
                     </div>
                     <div class="row__input">
                       <span>Seats</span>
@@ -570,7 +655,12 @@
                   <div class="row__blocks">
                     <div class="row__input">
                       <span>Paid</span>
-                      <input type="number" name="paid" id="p6" class="row_paid" />
+                      <input
+                        type="number"
+                        name="paid"
+                        id="p6"
+                        class="row_paid"
+                      />
                     </div>
                     <div class="row__input">
                       <span>Seats</span>
@@ -596,7 +686,12 @@
                   <div class="row__blocks">
                     <div class="row__input">
                       <span>Paid</span>
-                      <input type="number" name="paid" id="p7" class="row_paid" />
+                      <input
+                        type="number"
+                        name="paid"
+                        id="p7"
+                        class="row_paid"
+                      />
                     </div>
                     <div class="row__input">
                       <span>Seats</span>
@@ -620,8 +715,10 @@
                 <!--Third fare ends here-->
               </div>
             </div>
-            <button id="addBtn" class="addBtn add2nd">Add Second Price</button>
-            <button id="addBtn" class="addBtn add3rd" >Add Third Price</button>
+              <button id="add2ndBtn" class="addBtn add2nd">
+                Add Second Price
+              </button>
+              <button id="add3rdBtn" class="addBtn add3rd">Add Third Price</button>
             </div>
           </div>
         </div>
