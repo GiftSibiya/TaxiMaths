@@ -16,7 +16,7 @@ let driverCash6 = document.getElementById("driverCut6");
 let driverCash7 = document.getElementById("driverCut7");
 //Buttons//
 let firstCalc = document.getElementById("firstBtn");
-// Event Listeners //
+// Event Listeners for calculation on user input //
 let fareInput = document.getElementById("fare");
 let totalSeatsInput = document.getElementById("total_seats");
 let paidInput1 = document.getElementById("p1");
@@ -144,7 +144,7 @@ add2ndBtn.addEventListener("click", add2ndFare);
 add3rdBtn.addEventListener("click", add3rdFare);
 
 function add2ndFare() {
-  console.log("hello world");
+  console.log("2nd row addition test");
   document.querySelector(".body").style.height = "200px";
   document.querySelector(".secondFare").style.height = "260px";
   document.querySelector(".background").style.height = "120vh";
