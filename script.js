@@ -137,6 +137,8 @@ function calculateChange() {
     console.log("testing seventh");
   }
 }
+
+// This section is for updating the application frame when additional rows are added
 let add2ndBtn = document.getElementById("add2ndBtn");
 let add3rdBtn = document.getElementById("add3rdBtn");
 
@@ -149,8 +151,7 @@ function add2ndFare() {
   document.querySelector(".secondFare").style.height = "260px";
   document.querySelector(".background").style.height = "120vh";
   document.querySelector(".secondFare").style.display = "flex";
-  document.querySelector(".frame").style.margin = "10px 0px";
-  document.querySelector(".frame").style.height = "800px";
+  document.querySelector(".frame").style.height = "700px";
   document.querySelector(".add3rd").style.display = "flex";
   document.querySelector(".add2nd").style.display = "none";
 }
@@ -158,9 +159,9 @@ function add3rdFare() {
   console.log("hello world");
   document.querySelector(".body").style.height = "200px";
   document.querySelector(".thirdFare").style.height = "260px";
-  document.querySelector(".background").style.height = "160vh";
-  document.querySelector(".frame").style.margin = "180px 0px";
+  document.querySelector(".background").style.height = "180vh";
+  document.querySelector(".frame").style.margin = "200px 0px";
   document.querySelector(".thirdFare").style.display = "flex";
-  document.querySelector(".frame").style.height = "1000px";
+  document.querySelector(".frame").style.height = "950px";
   add3rdBtn.style.display = "none";
 }
