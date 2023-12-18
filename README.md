@@ -1,28 +1,28 @@
-My Awesome Project
-Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
+# Web taxi math
 
-Link to project: http://recruiters-love-seeing-live-demos.com/
+This is the official build of the web build for the taxi maths calculator. If you're here from the tiktok video then you've come to the right place. 
 
-alt tag
+Link to project: [ https://giftsibiya.github.io/TaxiMaths/ ]
 
-How It's Made:
-Tech used: HTML, CSS, JavaScript, Framework of choice
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write something. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+## Made with love in:
+**HTML** ,
+**CSS** ,
+**JavaScript**
 
-Optimizations
-(optional)
+What started out as a personal  Javscript excercise to flesh out an idea i had to reality as quickly as i can just to keep my social media consistant recieved soo much attention that 
+i just had to invest more time into developing a finished product based on the feedback of my followers. This lead me to many more clients who approached me for their own project. This one, though not the most advanced, means that this project has a special place in my heart. The mobile version for android and ios is currently; in development.
 
-You don't have to include this section but interviewers love that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are GREAT to bring up in interviews and you can use this section as reference when studying for technical interviews!
+## Optimizations
 
-Lessons Learned:
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those whoa this is awesome or wow I actually did it! moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
+To be honest a lot of the can be minimized using by following the DRY rule (Don't repeat yourself) as the code was written in a hurry to get something in productin. Uses of classes that can be replicated for the input fields would polish it up nicely.
 
-Examples:
+## Lessons Learned:
+As much as having a perfect project is important and desirable, having something you can show just for prototyping is desired as perfection can cause people to delay on progress. It's better to have something that's good that not having anything at all. 
+
+## Examples:
 Take a look at these couple examples that I have in my own portfolio:
 
-Palettable: https://github.com/alecortega/palettable
+Mobile Taxi Math: https://github.com/GiftSibiya/flutter_FrontSeat
 
-Twitter Battle: https://github.com/alecortega/twitter-battle
-
-Patch Panel: https://github.com/alecortega/patch-panel
+Kasi Snack App: https://github.com/GiftSibiya/Sneke
