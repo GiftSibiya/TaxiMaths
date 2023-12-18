@@ -16,6 +16,7 @@ let driverCash6 = document.getElementById("driverCut6");
 let driverCash7 = document.getElementById("driverCut7");
 //Buttons//
 let firstCalc = document.getElementById("firstBtn");
+
 // Event Listeners for calculation on user input //
 let fareInput = document.getElementById("fare");
 let totalSeatsInput = document.getElementById("total_seats");
@@ -138,13 +139,15 @@ function calculateChange() {
   }
 }
 
-// This section is for updating the application frame when additional rows are added
+// This section is for updating the application frame
+// when additional rows are added
 let add2ndBtn = document.getElementById("add2ndBtn");
 let add3rdBtn = document.getElementById("add3rdBtn");
 
 add2ndBtn.addEventListener("click", add2ndFare);
 add3rdBtn.addEventListener("click", add3rdFare);
 
+// Second row media query
 function add2ndFare() {
   console.log("2nd row addition test");
   document.querySelector(".body").style.height = "200px";
@@ -155,6 +158,8 @@ function add2ndFare() {
   document.querySelector(".add3rd").style.display = "flex";
   document.querySelector(".add2nd").style.display = "none";
 }
+
+// Third row media query
 function add3rdFare() {
   console.log("hello world");
   document.querySelector(".body").style.height = "200px";
