@@ -4,8 +4,7 @@ This is the official build of the web build for the taxi maths calculator. If yo
 
 Link to project: [ https://giftsibiya.github.io/TaxiMaths/ ]
 
-![app screenshot](/TaxiMaths/assets/images/screenshot/Screenshot.png)
-
+![app screenshot](/assets/images/screenshot/screenshot.png)
 
 ## Made with love in:
 **HTML** ,
